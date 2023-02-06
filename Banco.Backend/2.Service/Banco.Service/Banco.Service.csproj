@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\3.Domain\Banco.Backend.Domain.Contract\Banco.Domain.Contract.csproj" />
+    <ProjectReference Include="..\..\3.Domain\Banco.Domain\Banco.Domain.csproj" />
+    <ProjectReference Include="..\..\4.Infra\Banco.Infra.Data.Contract\Banco.Infra.Data.Contract.csproj" />
+    <ProjectReference Include="..\Banco.Service.Contract\Banco.Service.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

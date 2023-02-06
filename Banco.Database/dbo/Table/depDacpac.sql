@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[depDacpac]
+(
+	[DacpacId] INT       NOT NULL IDENTITY(1,1), 
+    [DataHora] DATETIME  NOT NULL CONSTRAINT DF_Dacpac_01 DEFAULT GETDATE()
+)
+GO
